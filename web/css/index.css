@@ -1,0 +1,12 @@
+@navbars-width: 10%;
+@navbars-background: #fff;
+* {
+	margin: 0;
+	padding: 0;
+}
+.content {
+	.main {
+		background: @navbars-background;
+		color: #fff;
+	}
+}

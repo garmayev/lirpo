@@ -1,0 +1,87 @@
+a:2:{i:0;a:4:{s:4:"root";s:63:"/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web/css/index.less";s:8:"compiled";s:1573:"* {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 616px) {
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  #page-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  #page-wrap #page-content {
+    width: 80%;
+    padding: 2em 0;
+  }
+  #page-wrap #left-nav,
+  #page-wrap #right-nav {
+    width: 10%;
+  }
+  #page-wrap #left-nav ul,
+  #page-wrap #right-nav ul {
+    list-style-type: none;
+  }
+  #page-wrap label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    font-size: 2em;
+    cursor: pointer;
+    transition: .4s linear;
+    background: #ffffff;
+  }
+  #page-wrap label[for=left-nav-menu] {
+    left: 0;
+  }
+  #page-wrap label[for=right-nav-menu] {
+    right: 0;
+  }
+  #page-wrap input ~ ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s linear;
+    background: #cacaca;
+  }
+  #page-wrap input ~ ul li {
+    display: flex;
+    height: 2em;
+    align-items: center;
+    padding: 0 15px;
+  }
+  #page-wrap input ~ ul li i {
+    padding-right: 5px;
+  }
+  #page-wrap input:checked ~ ul {
+    visibility: visible;
+    opacity: 1;
+    padding: 10px 0;
+  }
+  #page-wrap input:checked#right-nav-menu ~ label {
+    right: 10%;
+    transform: rotate(180deg);
+  }
+  #page-wrap input:checked#left-nav-menu ~ label {
+    left: 10%;
+  }
+  #page-footer {
+    display: block;
+  }
+}
+@media screen and (max-width: 616px) {
+  #left-nav,
+  #right-nav {
+    display: none;
+  }
+}
+";s:5:"files";a:1:{s:63:"/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web/css/index.less";i:1553847693;}s:7:"updated";i:1553847694;}i:1;N;}

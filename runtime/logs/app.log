@@ -1,0 +1,298 @@
+2019-03-29 08:49:25 [10.10.1.110][1][hm5es6uajpkuqnu1n6su0i6trc][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: notifications in /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/header.php:14
+Stack trace:
+#0 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/header.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/garmayev/...', 14, Array)
+#1 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(348): require('/home/garmayev/...')
+#2 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/garmayev/...', Array)
+#3 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/garmayev/...', Array, NULL)
+#4 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/main.php(29): yii\base\View->render('header.php')
+#5 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(348): require('/home/garmayev/...')
+#6 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/garmayev/...', Array)
+#7 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/garmayev/...', Array, Object(lirpo\controllers\SiteController))
+#8 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('int(1)\n')
+#9 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/controllers/SiteController.php(30): yii\base\Controller->render('index.php', Array)
+#10 [internal function]: lirpo\controllers\SiteController->actionIndex()
+#11 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#15 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2019-03-29 08:49:25 [10.10.1.110][1][hm5es6uajpkuqnu1n6su0i6trc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-penguinred' => 'jc33mqq5nt17ievj5nm675su25'
+    '_csrf-penguinred' => '7abbe880b6c9ced7c8f147cdb3b16ec65995e72a6130ff94084e197f38b88b3ca:2:{i:0;s:16:\"_csrf-penguinred\";i:1;s:32:\"tQ9ALZkGVYF_ei1zpjIQSJJUCKq5YxSj\";}'
+    'advanced-lirpo' => 'hm5es6uajpkuqnu1n6su0i6trc'
+    '_identity' => '497fc077d58c69b271ce49429951bd95476966eb6f19ccfd18c2412a718423daa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"fBK-iD_MiqK-ZH_Mi3n8DOIZTVGxJwre\",2592000]\";}'
+    '_csrf-lirpo' => '3293acb4567b41fed9e8dcef2d98c221f37c15c38e8892545b76ed003de81fd2a:2:{i:0;s:11:\"_csrf-lirpo\";i:1;s:32:\"VmUYYsM_Eex7mzewqThIIV6JgZTH141k\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lirpo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://lirpo.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-penguinred=jc33mqq5nt17ievj5nm675su25; _csrf-penguinred=7abbe880b6c9ced7c8f147cdb3b16ec65995e72a6130ff94084e197f38b88b3ca%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-penguinred%22%3Bi%3A1%3Bs%3A32%3A%22tQ9ALZkGVYF_ei1zpjIQSJJUCKq5YxSj%22%3B%7D; advanced-lirpo=hm5es6uajpkuqnu1n6su0i6trc; _identity=497fc077d58c69b271ce49429951bd95476966eb6f19ccfd18c2412a718423daa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fBK-iD_MiqK-ZH_Mi3n8DOIZTVGxJwre%22%2C2592000%5D%22%3B%7D; _csrf-lirpo=3293acb4567b41fed9e8dcef2d98c221f37c15c38e8892545b76ed003de81fd2a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-lirpo%22%3Bi%3A1%3Bs%3A32%3A%22VmUYYsM_Eex7mzewqThIIV6JgZTH141k%22%3B%7D'
+    'HTTP_X_COMPRESS' => 'null'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lirpo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lirpo.local'
+    'SERVER_ADDR' => '10.10.1.127'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.1.110'
+    'DOCUMENT_ROOT' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web/index.php'
+    'REMOTE_PORT' => '15171'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1553849365.273
+    'REQUEST_TIME' => 1553849365
+]
+2019-03-29 08:49:26 [10.10.1.110][1][hm5es6uajpkuqnu1n6su0i6trc][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: notifications in /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/header.php:14
+Stack trace:
+#0 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/header.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/garmayev/...', 14, Array)
+#1 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(348): require('/home/garmayev/...')
+#2 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/garmayev/...', Array)
+#3 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/garmayev/...', Array, NULL)
+#4 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/main.php(29): yii\base\View->render('header.php')
+#5 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(348): require('/home/garmayev/...')
+#6 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/garmayev/...', Array)
+#7 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/garmayev/...', Array, Object(lirpo\controllers\SiteController))
+#8 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('int(1)\n')
+#9 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/controllers/SiteController.php(30): yii\base\Controller->render('index.php', Array)
+#10 [internal function]: lirpo\controllers\SiteController->actionIndex()
+#11 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#15 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2019-03-29 08:49:26 [10.10.1.110][1][hm5es6uajpkuqnu1n6su0i6trc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-penguinred' => 'jc33mqq5nt17ievj5nm675su25'
+    '_csrf-penguinred' => '7abbe880b6c9ced7c8f147cdb3b16ec65995e72a6130ff94084e197f38b88b3ca:2:{i:0;s:16:\"_csrf-penguinred\";i:1;s:32:\"tQ9ALZkGVYF_ei1zpjIQSJJUCKq5YxSj\";}'
+    'advanced-lirpo' => 'hm5es6uajpkuqnu1n6su0i6trc'
+    '_identity' => '497fc077d58c69b271ce49429951bd95476966eb6f19ccfd18c2412a718423daa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"fBK-iD_MiqK-ZH_Mi3n8DOIZTVGxJwre\",2592000]\";}'
+    '_csrf-lirpo' => '3293acb4567b41fed9e8dcef2d98c221f37c15c38e8892545b76ed003de81fd2a:2:{i:0;s:11:\"_csrf-lirpo\";i:1;s:32:\"VmUYYsM_Eex7mzewqThIIV6JgZTH141k\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lirpo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-penguinred=jc33mqq5nt17ievj5nm675su25; _csrf-penguinred=7abbe880b6c9ced7c8f147cdb3b16ec65995e72a6130ff94084e197f38b88b3ca%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-penguinred%22%3Bi%3A1%3Bs%3A32%3A%22tQ9ALZkGVYF_ei1zpjIQSJJUCKq5YxSj%22%3B%7D; advanced-lirpo=hm5es6uajpkuqnu1n6su0i6trc; _identity=497fc077d58c69b271ce49429951bd95476966eb6f19ccfd18c2412a718423daa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fBK-iD_MiqK-ZH_Mi3n8DOIZTVGxJwre%22%2C2592000%5D%22%3B%7D; _csrf-lirpo=3293acb4567b41fed9e8dcef2d98c221f37c15c38e8892545b76ed003de81fd2a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-lirpo%22%3Bi%3A1%3Bs%3A32%3A%22VmUYYsM_Eex7mzewqThIIV6JgZTH141k%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lirpo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lirpo.local'
+    'SERVER_ADDR' => '10.10.1.127'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.1.110'
+    'DOCUMENT_ROOT' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web/index.php'
+    'REMOTE_PORT' => '15177'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1553849366.07
+    'REQUEST_TIME' => 1553849366
+]
+2019-03-29 08:51:09 [10.10.1.110][1][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: notifications in /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/header.php:14
+Stack trace:
+#0 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/header.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/garmayev/...', 14, Array)
+#1 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(348): require('/home/garmayev/...')
+#2 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/garmayev/...', Array)
+#3 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/garmayev/...', Array, NULL)
+#4 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/main.php(29): yii\base\View->render('header.php')
+#5 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(348): require('/home/garmayev/...')
+#6 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/garmayev/...', Array)
+#7 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/garmayev/...', Array, Object(lirpo\controllers\SiteController))
+#8 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('array(0) {\n}\n')
+#9 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/controllers/SiteController.php(30): yii\base\Controller->render('index.php', Array)
+#10 [internal function]: lirpo\controllers\SiteController->actionIndex()
+#11 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#15 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2019-03-29 08:51:09 [10.10.1.110][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-penguinred' => 'jc33mqq5nt17ievj5nm675su25'
+    '_csrf-penguinred' => '7abbe880b6c9ced7c8f147cdb3b16ec65995e72a6130ff94084e197f38b88b3ca:2:{i:0;s:16:\"_csrf-penguinred\";i:1;s:32:\"tQ9ALZkGVYF_ei1zpjIQSJJUCKq5YxSj\";}'
+    'advanced-lirpo' => 'hm5es6uajpkuqnu1n6su0i6trc'
+    '_identity' => '497fc077d58c69b271ce49429951bd95476966eb6f19ccfd18c2412a718423daa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"fBK-iD_MiqK-ZH_Mi3n8DOIZTVGxJwre\",2592000]\";}'
+    '_csrf-lirpo' => '3293acb4567b41fed9e8dcef2d98c221f37c15c38e8892545b76ed003de81fd2a:2:{i:0;s:11:\"_csrf-lirpo\";i:1;s:32:\"VmUYYsM_Eex7mzewqThIIV6JgZTH141k\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lirpo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://lirpo.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-penguinred=jc33mqq5nt17ievj5nm675su25; _csrf-penguinred=7abbe880b6c9ced7c8f147cdb3b16ec65995e72a6130ff94084e197f38b88b3ca%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-penguinred%22%3Bi%3A1%3Bs%3A32%3A%22tQ9ALZkGVYF_ei1zpjIQSJJUCKq5YxSj%22%3B%7D; advanced-lirpo=hm5es6uajpkuqnu1n6su0i6trc; _identity=497fc077d58c69b271ce49429951bd95476966eb6f19ccfd18c2412a718423daa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fBK-iD_MiqK-ZH_Mi3n8DOIZTVGxJwre%22%2C2592000%5D%22%3B%7D; _csrf-lirpo=3293acb4567b41fed9e8dcef2d98c221f37c15c38e8892545b76ed003de81fd2a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-lirpo%22%3Bi%3A1%3Bs%3A32%3A%22VmUYYsM_Eex7mzewqThIIV6JgZTH141k%22%3B%7D'
+    'HTTP_X_COMPRESS' => 'null'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lirpo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lirpo.local'
+    'SERVER_ADDR' => '10.10.1.127'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.1.110'
+    'DOCUMENT_ROOT' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web/index.php'
+    'REMOTE_PORT' => '15465'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1553849469.24
+    'REQUEST_TIME' => 1553849469
+]
+2019-03-29 08:51:09 [10.10.1.110][1][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: notifications in /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/header.php:14
+Stack trace:
+#0 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/header.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/garmayev/...', 14, Array)
+#1 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(348): require('/home/garmayev/...')
+#2 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/garmayev/...', Array)
+#3 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/garmayev/...', Array, NULL)
+#4 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/views/layouts/main.php(29): yii\base\View->render('header.php')
+#5 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(348): require('/home/garmayev/...')
+#6 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/garmayev/...', Array)
+#7 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/garmayev/...', Array, Object(lirpo\controllers\SiteController))
+#8 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('array(0) {\n}\n')
+#9 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/controllers/SiteController.php(30): yii\base\Controller->render('index.php', Array)
+#10 [internal function]: lirpo\controllers\SiteController->actionIndex()
+#11 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#15 /home/garmayev/www/AMGEXPERT.COM/trunk/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2019-03-29 08:51:09 [10.10.1.110][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-penguinred' => 'jc33mqq5nt17ievj5nm675su25'
+    '_csrf-penguinred' => '7abbe880b6c9ced7c8f147cdb3b16ec65995e72a6130ff94084e197f38b88b3ca:2:{i:0;s:16:\"_csrf-penguinred\";i:1;s:32:\"tQ9ALZkGVYF_ei1zpjIQSJJUCKq5YxSj\";}'
+    'advanced-lirpo' => 'hm5es6uajpkuqnu1n6su0i6trc'
+    '_identity' => '497fc077d58c69b271ce49429951bd95476966eb6f19ccfd18c2412a718423daa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"fBK-iD_MiqK-ZH_Mi3n8DOIZTVGxJwre\",2592000]\";}'
+    '_csrf-lirpo' => '3293acb4567b41fed9e8dcef2d98c221f37c15c38e8892545b76ed003de81fd2a:2:{i:0;s:11:\"_csrf-lirpo\";i:1;s:32:\"VmUYYsM_Eex7mzewqThIIV6JgZTH141k\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lirpo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-penguinred=jc33mqq5nt17ievj5nm675su25; _csrf-penguinred=7abbe880b6c9ced7c8f147cdb3b16ec65995e72a6130ff94084e197f38b88b3ca%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-penguinred%22%3Bi%3A1%3Bs%3A32%3A%22tQ9ALZkGVYF_ei1zpjIQSJJUCKq5YxSj%22%3B%7D; advanced-lirpo=hm5es6uajpkuqnu1n6su0i6trc; _identity=497fc077d58c69b271ce49429951bd95476966eb6f19ccfd18c2412a718423daa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fBK-iD_MiqK-ZH_Mi3n8DOIZTVGxJwre%22%2C2592000%5D%22%3B%7D; _csrf-lirpo=3293acb4567b41fed9e8dcef2d98c221f37c15c38e8892545b76ed003de81fd2a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-lirpo%22%3Bi%3A1%3Bs%3A32%3A%22VmUYYsM_Eex7mzewqThIIV6JgZTH141k%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lirpo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lirpo.local'
+    'SERVER_ADDR' => '10.10.1.127'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.10.1.110'
+    'DOCUMENT_ROOT' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/garmayev/www/AMGEXPERT.COM/trunk/lirpo/web/index.php'
+    'REMOTE_PORT' => '15466'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1553849469.575
+    'REQUEST_TIME' => 1553849469
+]
